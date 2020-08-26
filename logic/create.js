@@ -227,13 +227,13 @@ function guardarSlider() {
             //
         } else if (data === 3) {
             //
-            alert("Atención", 'Error al subir la imagen!');
+            swal("Atención", 'Error al subir la imagen!');
         } else {
             //
-            alert("Atención", 'Error al guardar el slider!');
+            swal("Atención", 'Error al guardar el slider!');
         }
     }).fail(function (data_error) {
         console.log(data_error);
-        alert('Error al conectarse!');
+        swal("Atención", 'Error al conectarse!');
     });
 }

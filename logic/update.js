@@ -339,6 +339,6 @@ function editarSlider() {
         }
     }).fail(function (data_error) {
         console.log(data_error);
-        alert('Error al conectarse!');
+        swal("Atención", 'Error al conectarse!');
     });
 }
