@@ -543,7 +543,7 @@ function cargarSelectEmpresas() {
         //
         if (data[0].sql === 1) {
             //
-            var campos = '<option value="" selected disabled>Selecciona</option>';
+            var campos = '<option value="0" selected>Selecciona empresa</option>';
             //
             for (var i = 0; i < data.length; i++) {
                 //
@@ -860,7 +860,7 @@ function cargarSelectSectores() {
         //
         if (data[0].sql === 1) {
             //
-            let campos = '<option value="" selected disabled>Selecciona sector</option>';
+            let campos = '<option value="0" selected>Selecciona sector</option>';
             //
             for (var i = 0; i < data.length; i++) {
                 //
@@ -1477,7 +1477,7 @@ function cargarSlideraEditar(valor) {
                 $('#fileLabel').html(data[0].imagen);
             }
             //
-            let camposS = '<option value="" disabled>Selecciona</option>';
+            let camposS = '<option value="0">Selecciona sector</option>';
             //
             for (var i = 0; i < arraySectores.length; i++) {
                 //
@@ -1492,11 +1492,11 @@ function cargarSlideraEditar(valor) {
             //
             $('#sectore').html(camposS);
             //
-            let camposE = '<option value="" disabled>Selecciona</option>';
+            let camposE = '<option value="0">Selecciona</option>';
             //
             if (data[0].idEmp === '0') {
                 //
-                camposE = '<option value="" disabled selected>Selecciona</option>';
+                camposE = '<option value="0" selected>Selecciona</option>';
             }
             //
             for (var i = 0; i < arrayEmpresas.length; i++) {
